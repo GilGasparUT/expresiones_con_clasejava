@@ -28,7 +28,7 @@
     <body>
         
    
-              <h1>Expreciones con una Clase Java</h1> 
+              <%-- <h1>Expreciones con una Clase Java</h1> 
               
             <table  id="tabla"  border="1" align="center">
             
@@ -60,10 +60,41 @@
                 <% } %> 
                 
                   </tbody>
-        </table>
+        </table> --%>
               
 
+                 <h1>Scriptlets con una Clase Java</h1> 
+                <% 
+                    out.println("<table>"
+                               
+                               + "<tr>"
+                               + "<th>MATRICULA</th>"
+                               + "<th>NOMBRE</th>"
+                               + "<th>APELLIDOS</th>"
+                               + "<th>CJV</th>"
+                               + "<th>DWI</th>"
+                               + "<th>ACBD</th>"
+                               + "<th>PROM</th>"
+                               + "</tr>");
+                  
                
+                 
+                 for (int i=0;i<10;i++) 
+                   
+                    out.println("<tr>"
+                            +"<td>"+alum[i].getMatricula() +"</td>"
+                            +"<td>"+alum[i].getNombre()    +"</td>" 
+                            +"<td>"+alum[i].getApellidos() +"</td>"
+                            +"<td>"+alum[i].getCjv()       +"</td>"
+                            +"<td>"+alum[i].getDwi()       +"</td>"
+                            +"<td>"+alum[i].getEcbd()      +"</td>"
+                            +"<td>"+alum[i].calcularProm() +"</td>"
+                           
+                            +"</tr>");
+                  out.println("</table>"); 
+                
+                %>
+          
                    
        
             
