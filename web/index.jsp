@@ -28,7 +28,7 @@
     <body>
         
    
-              <%-- <h1>Expreciones con una Clase Java</h1> 
+             <h1>Expreciones con una Clase Java</h1> 
               
             <table  id="tabla"  border="1" align="center">
             
@@ -60,7 +60,7 @@
                 <% } %> 
                 
                   </tbody>
-        </table> --%>
+        </table> 
               
 
                  <h1>Scriptlets con una Clase Java</h1> 
